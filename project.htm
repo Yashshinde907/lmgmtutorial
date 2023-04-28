@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="./project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="Header">
+<nav>
+    <a href="./project.htm"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAADo6OgwMDDDw8P6+vr29va3t7eCgoI9PT2pqamZmZne3t7X19fQ0NCsrKy/v7/KyspJSUmKioogICA1NTWfn5/t7e3i4uJWVlZERER2dnYnJydtbW1OTk4QEBBgYGCFhYUZGRlmZmabm5uSkpJ5eXkMDAxaWlrffHE1AAAHV0lEQVR4nO2d62LiKhCAiZqkF+utVm2rVWMvvv8THrOtmkwggWGAxDPfv223u3yFwDAMUQiGYRiGYRiGYRiGYRiGYRiGYZj/J+l9GroJTkmzKIqy23VM+9EvL+M4dFtckL5EV9YPoZtDTrqOymS35ZjOIwm3M1ZL47PI+uEmHC/zi4z5ovOO8vFZ5LHTjrX9d2GRhG4nFuXzB8k+O+k4uNf0y9l+hm6uMQPd/rvw3Kl+HMxM/XK+lqHbrcvgDeN34qcb/Wj0/FVov6OdX067x+oE9fxB7nqhPVTY99+Z71b2o/n60C1H9PyppF1jdULul/O9Cu11hu75g2xa0Y+0z1/FMXg/4uIzE96HQf2cjc8i4frRj98/xyD96M8v5/Dk248mPjNh59XRb/9dHL2NVbfrQx1HL4708ZmR49S13/QjpF/Ox8il38j7/CLDnWM7/HLcOE5fQ3sVeSV/HtvTf2dmg9v2y3khcxwFnz9VvJE4tuv5g9g7tnN8FnmbWPkFjV902aId2z0+i7ygipDCx2cmmDu2//mDrI0cu+eXs051ix668/xB9Ap0utl/Z5oL5rqxPtQyrhV8Dt08e3YNJwHj0A20pXlG7XVqGYTstMoAHkI3E02mG4YvD6GbiuPOoI4jDd1YBHOzvEb3unFv5Jcz2YZuswn3mEON5SZ0s/X5QlbhDn5Ct1yPPv4EVavCNzg2paldMHy1OgLvgKHlvZTWGx5ta8NabvhTv0/qvuGGoLiv1YYkCf0WG77T3LQpGzbe7/HHmur0sGy4ak2KY092Vaps2BNP8JpkENaEpUPQUIjHQFYFnun8ZIZiFThb/EZb+yUxDJyNo748LDUUy10gveiDvChabnja/4dZOBzc/lYZiuTbv19TLpvWUIiR74XDzasmagyF+PLpt3F0pa3WUAy95f/XpOVP+obe8v/f7u4kNhmKpYf1P3NZT9poeFo4MseCpEEaxlAk7y79ULlsYkMhpu4WjoVbP7VhAnKUjjaOM/A7ddCfKsNh9AX+bxf1DSBIG82/fRpWHpAFtR8I0uL96Uv+DCf5H+/Kf5f4/B8EadM81p/5M/ztsAykgwgPjjflREz8O1/36d9kozLc/30FBBsJ0YkjDNIG580a/e5CZXhZAjNQuzqg2DiCgoPCgkt/60lleLx+8VBuTnxn6weDtLRw2k4fvykM49LdPDAnPNld3ANBWrlign6TrzBMyqffcPNtkXG8B+NwXC6XoI9RVYawYeB3u8IuHCBIS47g++++DFfV3z3oRlTGEWbSqv/I0ZfhVNK8x/JPIiqOwECQRRD0C6LCUNpDMBltuHE8gA6UR4Hkm32FoWIqAfOA0cYRTMg9RSW2L0NVlm0L1quR7gkrCNLUszH5gqgwhFPcFZgz0so4zkGQVrMVsy9N0DOsuay+BmGcxsYRVoXWbafJ38ynMKxtMMzdNmQc12DgDWtHNtixhTGszBpL9aCuzE5NYe2rH8Neg2G0A4UuqWrhmIEVpnFqyvwYjpoMK6u3YuMIM2kaB1p+DHX28jCMk2QcYZCm8YuLIup3nOENKx0UwykSTPya8QH1gig31DxWg2FcaeN4AJ2hG+NRnyLKDbWzMSCpKj4v3wGrZqIdp1Mv+XJD/ezvHAyq5e9+AQZpBkk66gVRbmhyTHEHZE6bdphJMyrtoF4QpYax0UWMig98fffY6EJA34dh44IPONRtW5eGF1apl3yp4ZOhYWVeKWB+TE6cFJYaaq3MZWAY9wcmY0V8wiY1nJg3Sz7Lo46riF+8IzXEpUMrJWlD3CvRiBdEqSG24KscxmHTxuaX8MwN67Z7tcyuCW186n/nwdCiTOi8393j/wniowt5TBPjG/gvZzHCH8HBEMmR4Wmax9+hfV7u0T+7o39Tq7qeZuC6FKrK1kX5Xl3FkO/LF26qv2protBnaBhmjl4l3FD15a9qnzzXrWlosDe3AqY8PBr+VfK4BR5reDYkKL5ogHwJNDU0OEPD0Hf6wlnd+lKHVftuC4T1DcXQzcuv++7f4K1r6KYbYbo1rCH95UvKe5QkhlZbIgnEO10SQ8pJte/8veR/mBmeC13tIbqKroGhITIPV8HqpbJmGBuKxP5+6avPT14zN7Qv2nd+iaQExrChXqSBvuePW0EZGhyhVti4tJGBNETfS3C20VWCNRQrzC2htwAfeoQ2xIxU7yM0x8LQeKS6uavdRHlTZHg4aTSn+p5DzySL4iG76fFrrH+Gcwz32dxxYQE3P2DW3TX62AnW8HlO4COO0PXiVI9xqJxkkWENxao52zgP/gmHInfEGjaXk8xa8pGq+fOILPSo3zTSX/RBE39hS1nq5hvn6UI/qE9w/AeijhgoBF2eSHhmKBUM+hGq1DxVT8Uz75+76ZYVrNnctmEZJAUWbbbi05pp6RV7cXuDguXLtTc3RH+51t7e2CRz5XyB2NepRADGtxXJyMgrqW4kFlWxCZNT80mLtksMwzAMwzAMwzAMwzAMwzAMwzB++Q98PXgxjnBa0wAAAABJRU5ErkJggg==" height="50px" width="50px"></a>
+<div class="nav-links">
+    <ul>
+<li><a href="index.htm">HOME</a></li>
+<li><a href="index.htm">ABOUT</a></li>
+<li><a href="index.htm">COURSE</a></li>
+<li><a href="index.htm">BLOG</a></li>
+<li><a href="./contact.htm">CONTACT</a></li>
+</ul>
+</div>
+</nav>
+<div class="text-box">
+   <h1>Worlds Biggest University</h1> 
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius reiciendis debitis et, quod deserunt commodi velit obcaecati vitae ratione expedita quasi soluta ullam.<br> Laboriosam quaerat modi vel. Laborum, consectetur omnis!</p>
+
+<a href="./project.htm" class="hero-btn">Visit Us To Know More</a>
+</div>
+    </section>
+    <!-- ---------------------course------------- -->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere hic provident dolore. Quisquam, sint dolor. Blanditiis debitis eum est saepe ipsam dolore inventore vel nisi quaerat unde, voluptate, ipsa voluptatibus!</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repellendus voluptatibus quo fuga ipsa nesciunt officiis iure adipisci recusandae expedita ut culpa nulla eligendi quasi doloremque fugit architecto, consequuntur officia.
+            Aspernatur nisi, consequuntur natus, architecto facere qui, fugit perferendis eaque blanditiis enim est? Suscipit voluptatibus expedita fuga delectus a, aut, libero culpa nemo tenetur totam dignissimos ab perspiciatis pariatur autem.
+            Tempore totam possimus ab molestias, exercitationem similique ut deleniti nesciunt eaque nam distinctio. Nobis, laboriosam deleniti quod, voluptatum consequatur temporibus pariatur, quae fugit nemo autem aperiam hic ipsam repudiandae tempore!
+            Facilis minus exercitationem fuga quas! Perspiciatis, facilis iste! Sunt harum tempora, a aliquam rem dolores aspernatur repudiandae eveniet, consequuntur quibusdam nisi? Ratione maiores soluta aliquam at aliquid harum esse nobis.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorum maxime inventore iste sit magni unde ratione eligendi aliquam consequatur, sed aliquid provident asperiores, corrupti minima repudiandae autem praesentium numquam.
+            Aut, veritatis adipisci? Nulla id odio animi minima quia odit ipsa beatae molestiae laborum! Ipsa officiis mollitia molestias reprehenderit vel deleniti qui, voluptate adipisci assumenda quasi. Doloribus omnis nihil assumenda?
+            Quas magnam a consequuntur quisquam, nulla reprehenderit odit tempore magni non laudantium blanditiis eveniet dolores eligendi recusandae velit commodi maxime fugiat corporis? Iste, iusto ipsa neque facere adipisci rem velit.
+            Repellendus sunt reprehenderit id, minus cupiditate quidem sit in neque obcaecati officiis nostrum placeat, ipsum alias cum sapiente dignissimos? Dolores, sint. Ea autem, sunt vel ad debitis enim ducimus quia?</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat animi sapiente quasi aspernatur, tenetur nulla ut voluptatem dolorem eaque quos, laborum modi quas. Temporibus mollitia repudiandae accusantium reiciendis unde minima!
+            Beatae iusto et asperiores, officiis dignissimos error dolorem doloribus vero recusandae delectus! Voluptate enim esse voluptatem corporis perspiciatis eaque dolorem iure deserunt cupiditate? Eligendi dolorum quia culpa cupiditate fugit placeat?
+            Ducimus quos culpa repudiandae quas dicta qui omnis dignissimos ullam, eius dolores blanditiis, nostrum molestias nulla cum neque, necessitatibus sed? Provident obcaecati vitae distinctio excepturi voluptatum rerum dolore? Ipsa, recusandae.
+            Facilis placeat odio hic quidem recusandae unde fugit consequatur ullam natus sequi rem eius in tempora quam corrupti quisquam ducimus, vel accusamus! Deserunt quas, sequi ut aut repellendus facilis consectetur.</p>
+
+        </div>
+    </div>
+</section>
+
+<!-- --------------------------campus------------------ -->
+
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quia itaque velit vel qui, adipisci reprehenderit reiciendis illum praesentium natus nesciunt ea unde! In, aliquid maiores? Tempora eum quod incidunt.</p>
+<div class="row">
+    <div class="campus-col">
+        <img src="https://cdn.pixabay.com/photo/2016/08/13/15/29/johns-hopkins-university-1590925__340.jpg" height="300px">
+    <div class="layer">
+        <h3>LONDON</h3>
+    </div>
+    </div>
+    <div class="campus-col">
+        <img src="https://cdn.pixabay.com/photo/2014/11/17/16/39/oxford-534808__340.jpg" height="300px">
+    <div class="layer">
+        <h3>NEW YORK</h3>
+    </div>
+    </div>
+    <div class="campus-col">
+        <img src="https://cdn.pixabay.com/photo/2019/09/01/10/28/university-4444808__340.jpg" height="300px">
+    <div class="layer">
+        <h3>WASHINGTON</h3>
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- ------------------Facilities----------------- -->
+
+<section class="facility">
+  <center><h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit architecto voluptatibus iste itaque. Autem tempora sit consequatur velit quisquam, assumenda deserunt! Mollitia illo, neque eveniet modi esse impedit necessitatibus cupiditate?</p></center>
+<div class="row">
+    <div class="facilities-col">
+        <img src="https://cdn.pixabay.com/photo/2015/11/08/23/54/girl-1034421__340.jpg" height="400px" alt="">
+        <h3>World Class Library</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum corrupti, adipisci, saepe, asperiores aliquid obcaecati enim numquam accusamus esse eveniet fugit illo magnam corporis ex nemo expedita cupiditate inventore.
+        Placeat aspernatur reprehenderit error consequuntur quam provident vitae amet exercitationem ut, voluptate modi perspiciatis aperiam molestiae, eum esse minima earum, nemo officiis doloremque labore sapiente autem inventore. Unde, quisquam sunt.
+        </p>
+    </div>
+    <div class="facilities-col">
+        <img src="https://cdn.pixabay.com/photo/2015/06/12/18/26/team-807300__340.jpg"  height="400px" alt="">
+        <h3>Largest Playground</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum corrupti, adipisci, saepe, asperiores aliquid obcaecati enim numquam accusamus esse eveniet fugit illo magnam corporis ex nemo expedita cupiditate inventore.
+        Placeat aspernatur reprehenderit error consequuntur quam provident vitae amet exercitationem ut, voluptate modi perspiciatis aperiam molestiae, eum esse minima earum, nemo officiis doloremque labore sapiente autem inventore. Unde, quisquam sunt.
+        </p>
+    </div>
+    <div class="facilities-col">
+        <img src="https://cdn.pixabay.com/photo/2018/04/10/01/34/chair-3306118__340.jpg"height="400px" alt="">
+        <h3>Tasty And Healthy Food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum corrupti, adipisci, saepe, asperiores aliquid obcaecati enim numquam accusamus esse eveniet fugit illo magnam corporis ex nemo expedita cupiditate inventore.
+        Placeat aspernatur reprehenderit error consequuntur quam provident vitae amet exercitationem ut, voluptate modi perspiciatis aperiam molestiae, eum esse minima earum, nemo officiis doloremque labore sapiente autem inventore. Unde, quisquam sunt.
+        </p>
+    </div>
+</div>
+</section>
+<!-- ----------------------testimonials--------------- -->
+
+<section class="testimonials">
+    <h1>What Our Student Says</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem unde dignissimos repudiandae et incidunt veniam nam omnis at dolorem sequi blanditiis totam ullam perspiciatis recusandae vitae accusantium, illo temporibus!</p>
+
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/09/29/woman-1868717__340.jpg" alt="">
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt quia, saepe ea commodi sint corporis aliquid ipsum adipisci temporibus cum accusantium minima animi iste natus ex, ducimus pariatur facere fugit.
+                Harum doloribus labore autem maiores cupiditate voluptates ab, repellendus deserunt velit alias eveniet placeat fugit commodi facere ipsam necessitatibus veniam sed? Harum ut exercitationem repudiandae amet eveniet iusto odit quo!
+                Rem neque ipsa et corrupti! Aut unde doloremque dolores, delectus corporis laudantium nesciunt nulla. Porro, nesciunt nisi sint consequatur molestiae accusantium natus doloremque qui quas veniam, explicabo optio laborum tempora.</p>
+            <h3>Ayushi Patel</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+        </div>
+
+            <div class="testimonials-col">
+                <img src="https://cdn.pixabay.com/photo/2020/02/15/18/28/women-4851678_960_720.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt quia, saepe ea commodi sint corporis aliquid ipsum adipisci temporibus cum accusantium minima animi iste natus ex, ducimus pariatur facere fugit.
+                    Harum doloribus labore autem maiores cupiditate voluptates ab, repellendus deserunt velit alias eveniet placeat fugit commodi facere ipsam necessitatibus veniam sed? Harum ut exercitationem repudiandae amet eveniet iusto odit quo!
+                    Rem neque ipsa et corrupti! Aut unde doloremque dolores, delectus corporis laudantium nesciunt nulla. Porro, nesciunt nisi sint consequatur molestiae accusantium natus doloremque qui quas veniam, explicabo optio laborum tempora.</p>
+                <h3>Somya Nema </h3>
+                <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            
+                </div>
+            </div>
+
+                <div class="testimonials-col">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/29/03/14/portrait-1287413__340.jpg" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt quia, saepe ea commodi sint corporis aliquid ipsum adipisci temporibus cum accusantium minima animi iste natus ex, ducimus pariatur facere fugit.
+                        Harum doloribus labore autem maiores cupiditate voluptates ab, repellendus deserunt velit alias eveniet placeat fugit commodi facere ipsam necessitatibus veniam sed? Harum ut exercitationem repudiandae amet eveniet iusto odit quo!
+                        Rem neque ipsa et corrupti! Aut unde doloremque dolores, delectus corporis laudantium nesciunt nulla. Porro, nesciunt nisi sint consequatur molestiae accusantium natus doloremque qui quas veniam, explicabo optio laborum tempora.</p>
+                    <h3>Rahul Kourav</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+    </div>
+</section>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam non laborum delectus corporis nesciunt sed consectetur consequatur iure, fugit maiores sit, autem quaerat voluptatem repudiandae officia dolores cum excepturi magni.
+    Magnam, distinctio quia? Vero sit, suscipit totam velit nam magnam aspernatur nostrum officia sunt accusamus, ratione amet! Nobis molestias quod suscipit? Quod dolor sapiente eum vitae distinctio laudantium sit adipisci.
+    Nostrum architecto soluta aspernatur vitae aliquid odit rem porro accusamus officiis quidem culpa aut libero quae ab magni, sunt quas, magnam itaque asperiores temporibus? Quaerat nulla ab animi illo exercitationem!</p>
+
+<div class="icons">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+</div>
+<p>Made With  <i class="fa-sharp fa-solid fa-heart"></i> by Easy Tutorial</p>
+</section>
+
+
+
+
+
+</body>
+</html>

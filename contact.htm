@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="./index.css">
+  <title>Contact Page</title>
+</head>
+
+<body>
+
+  <center class="nb">
+    <nav class="navbar" id="home">
+      <div class="navlinks">
+
+        <a class="a0" href="./index.htm" id="home" target="_top"><i class="fa-solid fa-house"></i></a>
+        <a class="a1" href="./index.htm" id="home" target="_top">HOME</a>
+        <a class="a2" href="#static">STATIC WEBSITE</a>
+        <a class="a3" href="#dynamic">DYNAMIC WEBSITE</a>
+        <a class="a4" href="./project.htm">OUR PROJECTS</a>
+        <a class="a5" href="./contact.htm">CONTACT</a>
+      </div>
+    </nav>
+  </center>
+
+  <section class="containercontactform">
+    <div class="containercontactform">
+      <form onsubmit="sendEmail(); reset(); return false;" class="contactform" netlify>
+        <h1 class="contacthead"><b><u>GET IN TOUCH</u></b></h1>
+        <input type="text" name="" id="name" placeholder=" Name" *>
+        <input type="email" name="" id="email" placeholder=" E-mail" *>
+        <input type="tel" name="" id="contact" placeholder=" Contact" *>
+        <input type="text" name="" id="sub" placeholder=" Subject">
+        <input type="text " name="" id="msg" placeholder=" Message">
+        <input type="submit" value="Submit" class="btn">
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+
+    <div class="container">
+
+      <div class="d1">
+        <h3 class="nobold">Contact Details</h3>
+        <p class="phoneno">Call : <a class="phoneno" href="tel:+91 8668251433">+91 7709692919</a></p>
+        <p class="phoneno">Phone : <a class="phoneno" href="tel:+91 8668251433">+91 8668251433</a></p>
+        <p class="phoneno">Email : <a class="phoneno"
+            href="mailto:info@learnmoregainmore.com">info@learnmoregainmore.com</a></p>
+      </div>
+
+
+      <div class="d2">
+        <h3 class="nobold">Quick Links</h3>
+        <p><a class="quicklinks" href="">OUR COMMUNITY</a></p>
+        <p><a class="quicklinks" href="">OUR CLIENTS</a></p>
+        <p><a class="quicklinks" href="">EXPLORE MORE</a></p>
+      </div>
+
+      <div class="d3">
+        <h4 class="get_social">Get Social With Us</h4>
+        <div class="icons1">
+          <a href="https://www.facebook.com/learnmoregainmore" target="blank" title="LMGM Facebook"
+            class="social-icon si-dark si-colored si-facebook nobottommargin">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="https://twitter.com/learnmoregainmore" target="blank" title="LMGM Twitter"
+            class="social-icon si-dark si-colored si-twitter nobottommargin">
+            <i class="fa-brands fa-square-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/learnmoregainmore---best-web-design-company-in-india" target="blank"
+            title="LMGM LinkedIn" class="social-icon si-dark si-colored si-linkedin nobottommargin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        &nbsp;&nbsp;
+        <div class="icons1">
+          <a href="https://www.pinterest.com/learnmoregainmore/" target="blank" title="LMGM Pinterest"
+            class="social-icon si-dark si-colored si-pinterest nobottommargin">
+            <i class="fa-brands fa-square-pinterest"></i>
+          </a>
+          <a href="https://www.youtube.com/@yashu_0143/featured" target="blank" title="LMGM Youtube"
+            class="social-icon si-dark si-colored si-youtube nobottommargin">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/learnmoregainmorecom/" target="blank" title="LMGM Instagram"
+            class="social-icon si-dark si-colored si-instagram nobottommargin">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+        </div>
+        &nbsp;&nbsp;
+      </div>
+    </div>
+
+    </div>
+    <br><br>
+    <div class="whatsappimg_mobile hidden-lg hidden-md">
+      <div><a href="https://api.whatsapp.com/send/?phone=%2B918668251433&text&type=phone_number&app_absent=0"
+          class="float" target="_blank">
+          <i class="fa fa-whatsapp my-float"></i></a>
+      </div>
+    </div>
+    <hr>
+    <div id="copyrights">
+      <div class="container clearfix">
+        <span class="copy_right">Copyrights © 2021-2023. All Rights Reserved designed by
+          <a class="copyrightlmgm" href="#home" class="lmgmcompny">
+            &nbsp; Website Design Company LMGM</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const contact = document.getElementById("contact").value;
+      const subject = document.getElementById("sub").value;
+      const message = document.getElementById("msg").value;
+
+      const body = "Name: " + name + "\nEmail: " + email + "\nContact: " + contact + "\nSubject: " + subject + "\nMessage: " + message;
+
+      const mailtoLink = "mailto:yashshinde1122@gmail.com" + "?subject=" + encodeURIComponent("New Contact Form Enquiry") + "&body=" + encodeURIComponent(body);
+
+      window.location.href = mailtoLink;
+      alert("Your Response is Submitted Successfully");
+    }
+        // function sendEmail() {
+        //     Email.send({
+        //         SecureToken: "363c426f-b91f-4672-9105-c0569453d6c1",
+        //         To : "yashshinde1122@gmail.com",
+        //         From : document.getElementById("email").value,
+        //         Subject : "New Contact Form Enquiry",
+        //         Body : "Name: " + document.getElementById("name").value
+        //             + "<br> Email : " + document.getElementById("email").value
+        //             + "<br> Contact : " + document.getElementById("contact").value
+        //             + "<br> Subject : " + document.getElementById("sub").value
+        //             + "<br> Message : " + document.getElementById("msg").value
+        //     }).then(
+        //         message => alert("Your Response is Submitted Successfully")
+        //     );
+        // }
+  </script>
+
+
+</body>
+
+</html>
